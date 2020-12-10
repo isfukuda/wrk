@@ -13,4 +13,4 @@ PROXY="http://<YOUR PROXY>:8080"
 FILE="/var/tmp/result_$DATE\.txt"
 
 cd $DIR
-$ECHO ./wrk -t${THREAD} -c${CUNCURENT} -d${TW}s -H"User-Agent: SampleTools" --latency --timeout ${TIMEOUT} ${PROXY} -s script/proxy.lua -- ${URL} >& ${FILE}
+$ECHO ./wrk -t${THREAD} -c${CUNCURENT} -d${TW}s -H"User-Agent: SampleTools" --latency --timeout ${TIMEOUT} ${PROXY} -s scripts/proxy.lua -- ${URL} >& ${FILE}
